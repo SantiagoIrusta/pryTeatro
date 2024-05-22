@@ -20,7 +20,7 @@ namespace pryTeatro
 
         private void optQuenaken_CheckedChanged(object sender, EventArgs e)
         {
-           
+
 
 
         }
@@ -29,7 +29,7 @@ namespace pryTeatro
         {
 
 
-           
+
         }
 
         private void optTobas_CheckedChanged(object sender, EventArgs e)
@@ -39,7 +39,7 @@ namespace pryTeatro
 
         private void cboZona_SelectedIndexChanged(object sender, EventArgs e)
         {
-          
+
 
             if (optQuenaken.Checked)
             {
@@ -54,7 +54,7 @@ namespace pryTeatro
                             cboFila.Items.Add(i);
                         }
 
-                        for(int j = 1; j <= 5; j++)
+                        for (int j = 1; j <= 5; j++)
                         {
                             cboAsiento.Items.Add(j);
                         }
@@ -158,9 +158,21 @@ namespace pryTeatro
 
         private void cboFila_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
+        private void btnSeleccionar_Click(object sender, EventArgs e)
+        {
+            if(cboFila.Text != "" && cboAsiento.Text != "")
+            {
+                MessageBox.Show("Lugar Guardado");
 
+            }
+            else
+            {
+                MessageBox.Show("Debe completar todos los campos");
+            }
+            
+        }
     }
 }

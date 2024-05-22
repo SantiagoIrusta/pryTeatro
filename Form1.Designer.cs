@@ -147,6 +147,7 @@
             btnSeleccionar.TabIndex = 10;
             btnSeleccionar.Text = "Seleccionar";
             btnSeleccionar.UseVisualStyleBackColor = true;
+            btnSeleccionar.Click += btnSeleccionar_Click;
             // 
             // Form1
             // 
